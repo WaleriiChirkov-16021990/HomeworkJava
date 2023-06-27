@@ -2,6 +2,7 @@ FROM bellsoft/liberica-openjdk-alpine
 
 COPY ./src ./sourceMyContainer
 
-RUN javac -sourcepath ./sourceMyContainer -d out sourceMyContainer/Main.java
+CMD javadoc -d docs -sourcepath sourceMyContainer -cp out -subpackages ru
 
-CMD java -classpath ./out Main
+
+

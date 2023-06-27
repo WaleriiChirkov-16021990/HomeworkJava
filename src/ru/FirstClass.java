@@ -1,7 +1,20 @@
+package ru;
+
 import java.util.Scanner;
 
+/**
+ * Class for enter user info and show this info
+ */
 public class FirstClass {
+	/**
+	 * scanner field
+	 */
 	Scanner scanner;
+	
+	/**
+	 * Init unique scanner in FirstClass
+	 * @param scanner - this scanner
+	 */
 	
 	public FirstClass(Scanner scanner) {
 		this.scanner = scanner;
@@ -11,6 +24,9 @@ public class FirstClass {
 		this.scanner = new Scanner(System.in);
 	}
 	
+	/**
+	 * Method runs for FirstClass of application
+	 */
 	public void run() {
 		String name = setData("Введите имя: ");
 		String age_str = setData("Введите возраст");
